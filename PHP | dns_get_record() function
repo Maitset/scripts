@@ -1,0 +1,11 @@
+<?php
+$res=dns_get_record("geeksforgeeks.org", DNS_MX);
+foreach($res as $ar){
+
+	foreach($ar as $key=>$val){
+			echo $key.":".$val."</br>";
+	}
+	echo "</br>";
+}
+
+?>
