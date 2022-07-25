@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>
+		How to detect operating system on the
+		client machine using JavaScript ?
+	</title>
+</head>
+
+<body style="text-align:center;">
+
+	<h1 style="color:green;">GeeksforGeeks</h1>
+
+	<button ondblclick="version()">
+		Return OS Version
+	</button>
+
+	<p id="OS"></p>
+	
+	<!-- Script to return OS details -->
+	<script>
+		function version() {
+			var os = navigator.appVersion;
+			
+			// Display the OS details
+			document.getElementById("OS").innerHTML = os;
+		}
+	</script>
+</body>
+
+</html>				
